@@ -10,7 +10,7 @@ public class GrayHax {
 	public static void startClient() {
 		moduleManager = new ModuleManager();
 		
-		Display.setTitle(name + " " + version + "by " + creator);
+		Display.setTitle(name + " " + version);
 		
 	}
 	
