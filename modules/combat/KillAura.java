@@ -29,9 +29,10 @@ public class KillAura extends Module{
 					continue;
 				if(mc.player.getDistanceToEntity(entity) <= 6.2173613F) {
 					if(entity.isEntityAlive()) {
-						if(timer.hasTimeElapsed(625, true))
-						mc.playerController.attackEntity(mc.player, entity);
-						mc.player.swingArm(EnumHand.MAIN_HAND);
+						if(timer.hasTimeElapsed(625, true)) {
+							mc.playerController.attackEntity(mc.player, entity);
+							mc.player.swingArm(EnumHand.MAIN_HAND);
+						}
 					}
 				}
 			}
