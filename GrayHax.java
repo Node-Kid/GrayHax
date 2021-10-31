@@ -7,7 +7,7 @@ import com.grayjam.grayhax.GrayHax.modules.ModuleManager;
 public class GrayHax {
 	public static String name = "GrayHax", version = "0.1.0", creator = "GrayJam";
 	public static ModuleManager moduleManager;
-	public void startClient() {
+	public static void startClient() {
 		moduleManager = new ModuleManager();
 		
 		Display.setTitle(name + " " + version + "by " + creator);
