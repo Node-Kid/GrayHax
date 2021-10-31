@@ -2,7 +2,7 @@ package com.grayjam.grayhax.GrayHax.modules;
 
 import java.util.ArrayList;
 
-import com.grayjam.grayhax.GrayHax.modules.*;
+import com.grayjam.grayhax.GrayHax.modules.combat.*;
 import com.grayjam.grayhax.GrayHax.modules.movement.*;
 
 public class ModuleManager {
@@ -10,7 +10,8 @@ public class ModuleManager {
 	public ModuleManager() {
 		mods = new ArrayList<Module>();
 		//combat
-		
+		newMod(new FastBow());
+		newMod(new KillAura());
 		//movement
 		newMod(new AutoSprint());
 		//player
