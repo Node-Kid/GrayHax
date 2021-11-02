@@ -30,7 +30,7 @@ public class Module {
 	public void onUpdate() {}
 	public void onRender() {}
 	public void onEvent(Event e) {
-		for(Module m : GrayHax.moduleManager.getModules()) {
+		for(Module m : GrayHax.modules) {
 			if(!m.isToggled())
 				continue;
 			m.onEvent(e);
@@ -39,9 +39,6 @@ public class Module {
  	public Minecraft getMc() {
 		return mc;
 	}
-	public void setMc(Minecraft mc) {
-		this.mc = mc;
-	} 
 	public String getName() {
 		return name;
 	}

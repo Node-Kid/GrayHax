@@ -14,7 +14,7 @@ public class HUD {
 	public void draw() {
 		ScaledResolution sr = new ScaledResolution(mc);
 		fr.drawStringWithShadow(GrayHax.name + " v" + GrayHax.version, 2, 2, -1);
-		for(Module m : GrayHax.moduleManager.getModules()) {
+		for(Module m : GrayHax.modules) {
 			if(!m.isToggled()) continue;
 			Gui.drawRect(0, 12, fr.getStringWidth(m.getName()) + 4, 15 + fr.FONT_HEIGHT, 0x90000000);
 			//Gui.drawRect(left, top, right, button, 0);
