@@ -1,5 +1,8 @@
 package com.grayjam.grayhax.GrayHax.modules;
 
+import com.grayjam.grayhax.GrayHax.GrayHax;
+import com.grayjam.grayhax.GrayHax.events.Event;
+
 import net.minecraft.client.Minecraft;
 
 public class Module {
@@ -26,6 +29,13 @@ public class Module {
 	public void onDisable() {}
 	public void onUpdate() {}
 	public void onRender() {}
+	public void onEvent(Event e) {
+		for(Module m : GrayHax.moduleManager.getModules()) {
+			if(!m.isToggled())
+				continue;
+			m.onEvent(e);
+		}
+	}
  	public Minecraft getMc() {
 		return mc;
 	}

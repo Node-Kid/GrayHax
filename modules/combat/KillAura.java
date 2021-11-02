@@ -31,7 +31,7 @@ public class KillAura extends Module{
 					if(entity.isEntityAlive()) {
 						if(timer.hasTimeElapsed(625, true)) {
 							mc.playerController.attackEntity(mc.player, entity);
-							mc.player.swingArm(EnumHand.MAIN_HAND);
+							mc.player.swingArm(EnumHand.MAIN_HAND);				
 						}
 					}
 				}
